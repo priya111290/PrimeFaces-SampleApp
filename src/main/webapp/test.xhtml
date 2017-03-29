@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+ 
+	<h:head>
+    </h:head>
+    
+    <h:body>
+        <h2>Registration form</h2> <br/>
+        
+        <h:form id="myForm">
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><p:inputText value="#{TestBean.username}" required="true" id="Username" size="10"/></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><p:password value="#{TestBean.password}" required="true" feedback="true" id="Password"/></td>
+				</tr>
+				<tr>
+					<td>Confirm Password</td>
+					<td><p:password value="#{TestBean.passwordConfirm}" required="true" feedback="true" id="ConfirmPassword"/></td>
+				</tr>
+				</table>
+			<table>
+				<tr>
+					<td><p:messages id="messages" autoUpdate="true" closable="true" /></td>
+				</tr>
+			</table>
+		</h:form>
+    </h:body>
+</html>
